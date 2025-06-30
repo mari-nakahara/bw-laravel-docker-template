@@ -12,8 +12,8 @@ class TodoController extends Controller
         $todo = new Todo();
         $todos = $todo->all();
 
-        // dd($todos);  //
+        //dd('新規作成画面のルート実行！');
 
-        return view('todo.index', ['todos' => $todos]);
+        return view('todo.create');
     }
 }
