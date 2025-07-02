@@ -20,7 +20,7 @@ return view('todo.index', ['todos' => $todos]);
 第2引数：テンプレートに渡す変数（連想配列）
 
 ### index.blade.phpの$todos・$todoに代入されているものは何か
-$todos：Todo::all() の返り値、つまりTodoモデルの全レコードのコレクション
+$todos：Todo::all() の返り値、つまりTodoモデルの全レコード
 $todo：foreachの中で1件ずつ取り出した1つのTodoインスタンス
 
 ## Todo作成機能
@@ -43,7 +43,7 @@ INSERT INTO todos (...) VALUES (...);
 UPDATE todos SET ... WHERE id = ?;
 
 ### redirect()->route()は何をしているか
-指定した名前付きルートへリダイレクトする（例：return redirect()->route('todo.index')）
+指定した名前付きルートへリダイレクトする
 画面遷移や処理の完了後の遷移先として使う
 
 ## その他

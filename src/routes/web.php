@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// // 一覧表示
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+// 一覧表示
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // // 新規作成画面
 // Route::get('/todo', function () {
